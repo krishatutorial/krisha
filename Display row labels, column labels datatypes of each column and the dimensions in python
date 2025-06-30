@@ -1,0 +1,20 @@
+import pandas as pd
+# Creating the DataFrame
+data = {
+'Category': ['Electronics', 'Electronics', 'Furniture', 'Furniture', 'Groceries', 'Groceries'],
+'Item': ['Laptop', 'Smartphone', 'Table', 'Chair', 'Milk', 'Bread'],
+'Expenditure': [1200, 800, 300, 150, 50, 30]
+}
+df = pd.DataFrame(data)
+# Display row labels (index)
+print("Row Labels (Index):")
+print(df.index)
+# Display column labels
+print("\nColumn Labels:")
+print(df.columns)
+# Display data types of each column
+print("\nData Types of Each Column:")
+print(df.dtypes)
+# Display dimensions of the DataFrame
+print("\nDimensions of DataFrame (Rows, Columns):")
+print(df.shape)
